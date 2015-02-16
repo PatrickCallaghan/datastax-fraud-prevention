@@ -54,7 +54,7 @@ To import the data into the table run the following - you need to check your fil
 
 The transactions file will send the data in the from
 
-	credit_card_no, date, transaction_id, location, userdevice_location, amount
+	credit_card_no, date, transaction_id, location, userdevice_location, issuer, amount
 		
 e.g.
 	
@@ -78,3 +78,5 @@ To get the data from the stream, you can use the following
 	val lines = input.map(f => f.split("\n").map(f => f.split(",")))
 
 	val transactions = lines.map(line => new Transaction(line(0)(0), line(0)(1), line(0)(2), line(0)(3), line(0)(4), line(0)(5), line(0)(6).toDouble))
+
+Good Luck. 
