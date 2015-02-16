@@ -13,20 +13,22 @@ You have been given 2 tables.
 
 You have also been told that there have been fraudulent transactions which include the following transaction ids.
 
-ef1038b7-7c3f-4ef5-95a6-cb55a72c62e9,
-6fc1bfe6-fa37-49cb-b78a-dfa4f167451b,
-e29e7c27-cebe-4b78-a430-2c2fbab0123e,
-91dd3b7e-179a-444b-9cfc-a7c627da4954,
-f70a67ae-417b-4863-b984-b6264c9ff633,
-fb81bd68-99a8-49bd-9b62-e75ca3f1fcf9,
-d8e59cf5-a454-4fc6-b444-6862807b10d3,
-4d580294-a713-47b9-aef0-338d664a2287
+	ef1038b7-7c3f-4ef5-95a6-cb55a72c62e9
+	6fc1bfe6-fa37-49cb-b78a-dfa4f167451b
+	e29e7c27-cebe-4b78-a430-2c2fbab0123e
+	91dd3b7e-179a-444b-9cfc-a7c627da4954
+	f70a67ae-417b-4863-b984-b6264c9ff633
+	fb81bd68-99a8-49bd-9b62-e75ca3f1fcf9
+	d8e59cf5-a454-4fc6-b444-6862807b10d3
+	4d580294-a713-47b9-aef0-338d664a2287
 
 Task 1. 
+-------
 
 Use Spark to discover all the fraudulent transactions based on the criteria of the above transactions. This will need some discovery work, looking at the fraudulent transactions against non-fraudulent transactions.
 
 Task 2.
+-------
 
 Based on the criteria found in Task 1, create a Spark Streaming job that opens a socket on port 9999 that will listen for incoming transactions. Transactions will be sent to this port with 8 fraudulent transactions and its your job to make sure they are send to a transactions_to_check table in DSE. 
 
